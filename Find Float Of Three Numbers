@@ -1,0 +1,30 @@
+public class RefactorFindFloat {
+    public class Maximum {
+        public static Integer testCase(Integer a, Integer b, Integer c) {
+            Integer max = b;
+            if (a.compareTo(max) > 0) {
+                max = a;
+            }
+            if (c.compareTo(max) > 0) {
+                max = c;
+            }
+            return max;
+        }
+        public static Float testCase1(Float a, Float b, Float c) {
+            Float max = a;
+            if (a.compareTo(max) > 0) {
+                max = a;
+            }
+            if (c.compareTo(max) > 0) {
+                max = c;
+
+            }
+            return max;
+        }
+        public static void main(String[] args) {
+            System.out.println("Maximum value is : "+testCase(10,11,8));
+            System.out.println("Maximum Integer value is : "+testCase(10,11,8));
+            System.out.println("Maximum Float value is : "+testCase1(12.2f,11.2f,8.3f));
+
+        }
+    }
